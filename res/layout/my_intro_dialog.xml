@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true" >
+
+    <RelativeLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_6"
+        android:gravity="center"
+        android:padding="30dp" >
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcom"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+        
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+             android:layout_marginTop="4dp"
+            android:layout_below="@+id/header"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+        <TextView
+            android:id="@+id/message_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_marginTop="10dp"
+            android:text="With this application you can record and cusomize your Waze sounds."
+            android:textColor="#fff"
+            android:textSize="16sp" />
+        
+                <TextView
+                    android:id="@+id/message_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/message_1"
+                    android:layout_marginTop="10dp"
+                    android:text="You can always revert all the changes by clicking on:"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+        
+<ImageView
+            android:id="@+id/revert_1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/message_2"
+   
+            android:layout_marginTop="7dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/intro_1" /> 
+            
+            <TextView
+                android:id="@+id/rever_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/revert_1"
+                android:layout_alignTop="@id/revert_1"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/revert_1"
+                 android:gravity="center_vertical"
+                android:text=" - from the bottom dashboard"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+            
+<ImageView
+            android:id="@+id/revert_2"
+            android:layout_width="95dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/revert_1"
+            android:layout_marginTop="7dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/intro_3" /> 
+            
+            <TextView
+                android:id="@+id/rever_msg_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/revert_2"
+                android:layout_alignTop="@id/revert_2"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/revert_2"
+                android:gravity="center_vertical"
+                android:text=" - from the menu"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+            
+                      <TextView
+                android:id="@+id/terms_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/revert_2"
+                 android:layout_marginTop="10dp"
+                android:text="The developer of this application is not responsible for any loss or damage caused, or alleged to have been caused, directly or indirectly, by using this application."
+                android:textColor="#fff"
+                android:textSize="10sp" />
+                      
+                              <Button
+                                  android:id="@+id/agree_btn"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_below="@+id/terms_1"
+                                  android:layout_centerHorizontal="true"
+                                  android:layout_marginTop="20dp"
+                                  android:background="@drawable/pp_selector_1"
+                                  android:gravity="center"
+                                  android:padding="8dp"
+                                  android:text="Agree and don&apos;t show this again"
+                                  android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

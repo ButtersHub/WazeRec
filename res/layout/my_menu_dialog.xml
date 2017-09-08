@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true" >
+
+    <RelativeLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_6"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp" >
+
+
+
+        <Button
+            android:id="@+id/upgrade_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/pp_selector_1"
+            android:text="Upgrade" />
+        
+                        <Button
+            android:id="@+id/revertall_btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/pp_selector_1"
+            android:layout_below="@+id/upgrade_btn"
+            android:text="Revert all sounds" />
+<!-- 
+        <Button
+            android:id="@+id/zipex_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/revertall_btn_2"
+            android:layout_margin="3dp"
+            android:background="@drawable/pp_selector_1"
+            android:text="Save sounds as ZIP" /> -->
+
+        <Button
+            android:id="@+id/about_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/revertall_btn_2"
+            android:layout_margin="3dp"
+            android:background="@drawable/pp_selector_1"
+            android:text="About" />
+
+        <Button
+            android:id="@+id/feedback_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_btn"
+            android:layout_margin="3dp"
+            android:background="@drawable/pp_selector_1"
+            android:text="Feedback and Ideas " />
+        
+            <Button
+            android:id="@+id/rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedback_btn"
+            android:layout_margin="3dp"
+            android:background="@drawable/pp_selector_1"
+            android:text="Rate this app" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/upper_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/tt_3"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="10dp" >
+
+        <ImageButton
+            android:id="@+id/popupMenuBtn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/three_dots_selector"
+            android:textColor="#000" />
+
+        <ImageButton
+            android:id="@+id/fb_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/popupMenuBtn_1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/facebook_icon_6" />
+
+        <ImageView
+            android:id="@+id/logo_header"
+            android:layout_width="176dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo_header_4" />
+
+        <Button
+            android:id="@+id/dirs_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/fb_btn"
+            android:layout_toRightOf="@+id/logo_header"
+            android:background="@drawable/test_selector"
+            android:ellipsize="end"
+            android:gravity="center_vertical|center"
+            android:maxWidth="150dp"
+            android:singleLine="true"
+            android:text="English"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tt_5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="20dp" >
+
+        <ImageView
+            android:id="@+id/left_speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/speakers_small" />
+
+        <ImageView
+            android:id="@+id/right_speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/speakers_small" />
+
+        <RelativeLayout
+            android:id="@+id/btn_helper_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/left_speaker" >
+
+            <ImageButton
+                android:id="@+id/record_btn_1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_back_11"
+                android:src="@drawable/mic_1" />
+
+            <ImageButton
+                android:id="@+id/play_btn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/record_btn_1"
+                android:background="@drawable/btn_back_11"
+                android:src="@drawable/play_1" />
+
+            <ImageButton
+                android:id="@+id/restore_btn1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/record_btn_1"
+                android:background="@drawable/btn_back_11"
+                android:src="@drawable/restore_1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/vis_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_helper_layout"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/vis_0"
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:minWidth="1dip"
+                android:scaleType="centerCrop"
+                android:src="@drawable/viz_2"
+                 />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btn_layout"
+        android:layout_below="@+id/upper_layout"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:dividerHeight="3dp"
+        android:listSelector="@android:color/transparent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollbars="none" />
+
+</RelativeLayout>
